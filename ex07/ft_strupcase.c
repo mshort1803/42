@@ -1,16 +1,12 @@
-#include <stdio.h>
-
 char	*ft_strupcase(char *str)
 {
-	int		i;
+	int i;
 
 	i = 0;
-	while (str[i])
+	while (str[i] != '\0')
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
-		{
-			str[i] = str[i] - 32;
-		}
+		if (str[i] >= 65 && str[i] <= 90)
+			str[i] -= 32;
 		i++;
 	}
 	return (str);
@@ -18,7 +14,6 @@ char	*ft_strupcase(char *str)
 
 int main(void)
 {
-    char *str = "hello world";
-    printf("%s", ft_strupcase(str));
-    return (0);
+    char str[] = "HELLO";
+    ft_strupcase(str);
 }

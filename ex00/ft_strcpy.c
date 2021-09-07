@@ -14,12 +14,12 @@ char	*ft_strcpy(char *dest, const char *src)
 	return (dest);
 }
 
-// int main(void)
-// {
-// 	char str[] = "Hello World";
-// 	char dest[30];
+int main(void)
+{
+ 	char str[] = "Hello World";
+ 	char dest[30];
 
-// 	ft_strcpy(dest, str);
+ 	ft_strcpy(dest, str);
 	
-// 	printf("%s", dest);
-// }
+ 	printf("%s", dest);
+ }
